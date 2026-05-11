@@ -1,0 +1,5 @@
+app/backup_manager*
+app/backup*manager*
+app/backups
+.vscode_extensions
+*.DS_Store

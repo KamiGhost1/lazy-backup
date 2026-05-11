@@ -1,0 +1,13 @@
+services:
+  dev-lazy-backup:
+    build:
+      context: .
+      dockerfile: ./docker/Dockerfile
+    container_name: dev-lazy-backup
+    stdin_open: true 
+    tty: true
+    volumes:
+      - ./app:/app
+      - /var/run/docker.sock:/var/run/docker.sock
+      - .vscode_extensions:/root/.vscode-server
+    user: root
